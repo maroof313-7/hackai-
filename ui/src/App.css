@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a69ac); /* Modern gradient */
+  color: white; /* White text */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  text-align: center;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+}
+
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay for splash screen */
+}
+
+.splash-box {
+  padding: 20px;
+  border: 5px solid white; /* White border */
+  border-radius: 15px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2); /* Slightly transparent background for the box */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on focus */
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: white; /* Button background */
+  color: #1e3c72; /* Button text color */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #eaeaea; /* Change button color on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+button:active {
+  transform: scale(0.95); /* Slightly shrink button when pressed */
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 28px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  color: #ff4d4d; /* Red color for error messages */
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input {
+        width: 100%; /* Full width on small screens */
+    }
+    
+    button {
+        width: 100%; /* Full width on small screens */
+    }
+}

@@ -1,0 +1,29 @@
+/* src/components/SplashScreen.css */
+.splash-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1e3c72, #2a69ac); /* Outer gradient */
+}
+
+.splash-box {
+    padding: 20px;
+    background: #3e4b8b; /* Inner box color */
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+}
