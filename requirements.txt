@@ -1,0 +1,7 @@
+transformers==4.11.3
+torch
+pandas
+express 
+body-parser 
+cors
+python-pptx
